@@ -1,9 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menimentos & Estuatas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="./utils/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="banner" data-aos="fade-down"></div>
+
+    <div class="container">
+        <h1 class="title" data-aos="fade-right">Menimentos & Estuatas</h1>
+        
+        <div class="story" data-aos="fade-up">
+            <p>
+                "Por una vida sin límites y mucho alcohol,<br>
+                Recordando siempre aquello que nos unió.<br>
+                Gracias a Doctaforum se inició esta historia,<br>
+                en la cuál lo que más importa es la memoria,<br>
+                que guarda momentos increíbles,<br>
+                y depara un futuro aún más imprevisible.<br>
+                Por un mundo lleno de experiencias que marquen nuestros recuerdos.<br>
+                Por seguir compartiéndolos juntos, y ante todo, cuerdos."
+            </p>
+        </div>
+
+        <img src="./utils/mid_banner.png" alt="Logo" class="logo" data-aos="zoom-in">
+
+        <h2 class="title" data-aos="fade-left">¿Estás listo?</h2>
+
+        <div class="video-container" data-aos="fade-up">
+            <video width="100%" controls>
+                <source src="./utils/trailer.mov" type="video/mov">
+                Tu navegador no soporta el formato de video.
+            </video>
+        </div>
+        
+        <div class="row my-5">
+            <div class="col-md-4" data-aos="flip-left">
+                <h3>Itinerario</h3>
+                <ul class="list-group animate-list">
+                    <li class="list-group-item">09:00 - Texto 1</li>
+                    <li class="list-group-item">11:00 - Texto 2</li>
+                    <li class="list-group-item">14:00 - Texto 3</li>
+                    <li class="list-group-item">17:00 - Texto 4</li>
+                    <li class="list-group-item">21:00 - Texto 5</li>
+                </ul>
+            </div>
+            <div class="col-md-4" data-aos="flip-up">
+                <h3>Localización</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0MicxMy42Ilc!5e0!3m2!1ses!2ses!4v1635959105!5m2!1ses!2ses" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="col-md-4" data-aos="flip-right">
+                <h3>Sobre el Viaje</h3>
+                <img src="/api/placeholder/400/200" alt="Viaje" class="img-fluid mb-3">
+                <p>Una aventura inolvidable que nos espera. Prepárate para días llenos de risas, experiencias únicas y momentos que quedarán grabados para siempre en nuestra memoria.</p>
+            </div>
+        </div>
+
+        <h2 class="title" data-aos="fade-up">Preguntas frecuentes</h2>
+        
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        ¿Qué debo llevar?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Ropa cómoda, buen humor y ganas de pasarlo bien.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        ¿Cuándo es el próximo evento?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Próximamente anunciaremos la fecha exacta.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title" data-aos="fade-up">Ubicación</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0MicxMy42Ilc!5e0!3m2!1ses!2ses!4v1635959105!5m2!1ses!2ses" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <p class="text-center">Calle Example 123, Ciudad Example</p>
+    </div>
+
+    <footer data-aos="fade-up">
+        <p>Sobre nosotros: nada que contar... ya lo sabes todo</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
