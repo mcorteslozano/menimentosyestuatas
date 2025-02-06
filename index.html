@@ -31,18 +31,21 @@
 
         <h2 class="title" data-aos="fade-left">¿Estás listo?</h2>
 
-        <div class="video-container" data-aos="fade-up">
-            <video width="100%" controls>
-                <source src="./utils/trailer.mov" type="video/mov">
-                Tu navegador no soporta el formato de video...
-            </video>
+        <div class="video-container" data-aos="zoom-in">
+            <iframe 
+                src="https://www.youtube.com/embed/snTDKgS9gHU" 
+                title="YouTube video"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </div>
-        
+
         <div class="row my-5">
             <div class="col-md-4" data-aos="flip-left">
                 <h3>Itinerario</h3>
                 <ul class="list-group animate-list">
-                    <li class="list-group-item">09:00 - Texto 1</li>
+                    <li class="list-group-item">10:00 - Texto 1</li>
                     <li class="list-group-item">11:00 - Texto 2</li>
                     <li class="list-group-item">14:00 - Texto 3</li>
                     <li class="list-group-item">17:00 - Texto 4</li>
@@ -52,7 +55,7 @@
             <div class="col-md-4" data-aos="flip-up">
                 <h3>Localización</h3>
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0MicxMy42Ilc!5e0!3m2!1ses!2ses!4v1635959105!5m2!1ses!2ses" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8212043070907!2d-4.02025562345842!3d40.7219523370054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd417270b254b045%3A0x9e40a383a78e2098!2sAv.%20del%20Rosal%2C%205%2C%2028491%20Navacerrada%2C%20Madrid!5e0!3m2!1ses!2ses!4v1738870147965!5m2!1ses!2ses" 
                     width="100%" 
                     height="300" 
                     style="border:0;" 
@@ -62,7 +65,7 @@
             </div>
             <div class="col-md-4" data-aos="flip-right">
                 <h3>Sobre el Viaje</h3>
-                <img src="/api/placeholder/400/200" alt="Viaje" class="img-fluid mb-3">
+                <img src="./utils/home.jpg" alt="Viaje" class="img-fluid mb-3">
                 <p>Una aventura inolvidable que nos espera. Prepárate para días llenos de risas, experiencias únicas y momentos que quedarán grabados para siempre en nuestra memoria.</p>
             </div>
         </div>
@@ -73,41 +76,58 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                        ¿Qué debo llevar?
+                        ¿Qué tengo que llevar?
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Ropa cómoda, buen humor y ganas de pasarlo bien.
+                        ¡Energía! No hace falta ni pijama... no vamos a dormir
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                        ¿Cuándo es el próximo evento?
+                        ¿Y si soy alérgico a algo?
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Próximamente anunciaremos la fecha exacta.
+                        "Problemas tenemos todos"                  
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        ¿Obligatorio?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Grabar MUCHOS MUCHOS vídeos de la experiencia... que sino luego no hay reels                 
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="title" data-aos="fade-up">Ubicación</h2>
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0MicxMy42Ilc!5e0!3m2!1ses!2ses!4v1635959105!5m2!1ses!2ses" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
+        <div class="location-section">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8212043070907!2d-4.02025562345842!3d40.7219523370054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd417270b254b045%3A0x9e40a383a78e2098!2sAv.%20del%20Rosal%2C%205%2C%2028491%20Navacerrada%2C%20Madrid!5e0!3m2!1ses!2ses!4v1738870147965!5m2!1ses!2ses" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="location-info">
+                <h2 class="location-title">Ubicación</h2>
+                <p class="location-address">5 Avenida del Rosal, 28491 Navacerrada</p>
+            </div>
         </div>
-        <p class="text-center">Calle Example 123, Ciudad Example</p>
+
     </div>
 
     <footer data-aos="fade-up">
