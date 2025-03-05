@@ -76,10 +76,15 @@
                                             <i class="fas fa-eye text-primary" style="cursor: pointer;"></i>
                                         </span>
                                     </li>
-                                    <li class="list-group-item">
-                                        <span class="timeline-time">22:00-all night long</span>
-                                        <span class="timeline-detail">Trae cualquier cosa menos un vaso para tus copas
-                                            <small class="d-block text-muted">(Recuerda organizarte con los demás para el alcohol)</small>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="timeline-time">22:00-all night long</span>
+                                            <span class="timeline-detail">Trae cualquier cosa menos un vaso para tus copas
+                                                <small class="d-block text-muted">(Recuerda organizarte con los demás para el alcohol)</small>
+                                            </span>
+                                        </div>
+                                        <span class="image-preview-icon" data-toggle="modal" data-target="#alcoholModal">
+                                            <i class="fas fa-eye text-primary" style="cursor: pointer;"></i>
                                         </span>
                                     </li>
                                 </ul>
@@ -114,10 +119,15 @@
                                         <span class="timeline-time">21:00-22:00</span>
                                         <span class="timeline-detail">¿Cena?</span>
                                     </li>
-                                    <li class="list-group-item">
-                                        <span class="timeline-time">22:00-all night long</span>
-                                        <span class="timeline-detail">FIESTA DISFRACES (Malos *vs* Buenos)
-                                            <small class="d-block text-muted">(Accede a la sección disfraces para descubrir la temática)</small>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="timeline-time">22:00-all night long</span>
+                                            <span class="timeline-detail">FIESTA DISFRACES (Malos *vs* Buenos)
+                                                <small class="d-block text-muted">(Accede a la sección disfraces para descubrir la temática)</small>
+                                            </span>
+                                        </div>
+                                        <span class="image-preview-icon" data-toggle="modal" data-target="#disfracesModal">
+                                            <i class="fas fa-eye text-primary" style="cursor: pointer;"></i>
                                         </span>
                                     </li>
                                 </ul>
@@ -238,12 +248,37 @@
         <p>Sobre nosotros: nada que contar... ya lo sabes todo</p>
     </footer>
 
-    <!-- Modal para la imagen -->
     <div class="modal fade" id="tematicaModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body text-center">
                     <img src="./utils/comida.jpeg" class="img-fluid rounded" alt="Temática del Evento">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="alcoholModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="./utils/bebidas.jpeg" class="img-fluid rounded" alt="Información sobre Alcohol">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="disfracesModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="./utils/disfraces.jpeg" class="img-fluid rounded" alt="Temática de Disfraces">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
