@@ -7,6 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="./styles/styles.css" rel="stylesheet">
     <link rel="icon" href="./utils/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="banner" data-aos="fade-down"></div>
@@ -43,14 +44,111 @@
 
         <div class="row my-5">
             <div class="col-md-4" data-aos="flip-left">
-                <h3>Itinerario</h3>
-                <ul class="list-group animate-list">
-                    <li class="list-group-item">10:00 - Texto 1</li>
-                    <li class="list-group-item">11:00 - Texto 2</li>
-                    <li class="list-group-item">14:00 - Texto 3</li>
-                    <li class="list-group-item">17:00 - Texto 4</li>
-                    <li class="list-group-item">21:00 - Texto 5</li>
-                </ul>
+                <h3 class="text-center mb-4">Itinerario del Viaje</h3>
+                <div class="accordion" id="itinerarioViaje">
+                    <div class="card">
+                        <div class="card-header" id="headingViernes">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseViernes" aria-expanded="true" aria-controls="collapseViernes">
+                                    VIERNES 28
+                                </button>
+                            </h2>
+                        </div>
+            
+                        <div id="collapseViernes" class="collapse show" aria-labelledby="headingViernes" data-parent="#itinerarioViaje">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">18:00-18:30</span>
+                                        <span class="timeline-detail">Organización horarios de salida</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">19:00-21:00</span>
+                                        <span class="timeline-detail">Llegada a la Casa</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">21:00-22:00</span>
+                                        <span class="timeline-detail">Cada uno con su color</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">22:00-all night long</span>
+                                        <span class="timeline-detail">Trae cualquier cosa menos un vaso para tus copas
+                                            <small class="d-block text-muted">(Recuerda organizarte con los demás para el alcohol)</small>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header" id="headingSabado">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSabado" aria-expanded="false" aria-controls="collapseSabado">
+                                    SÁBADO 29
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSabado" class="collapse" aria-labelledby="headingSabado" data-parent="#itinerarioViaje">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">11:00-12:00</span>
+                                        <span class="timeline-detail">Desayuno</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">15:00-15:30</span>
+                                        <span class="timeline-detail">Comida - BBQ</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">15:30-20:00</span>
+                                        <span class="timeline-detail">Siesta o tarde de drinking games sorpresa</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">21:00-22:00</span>
+                                        <span class="timeline-detail">¿Cena?</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">22:00-all night long</span>
+                                        <span class="timeline-detail">FIESTA DISFRACES (Malos *vs* Buenos)
+                                            <small class="d-block text-muted">(Accede a la sección disfraces para descubrir la temática)</small>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header" id="headingDomingo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseDomingo" aria-expanded="false" aria-controls="collapseDomingo">
+                                    DOMINGO
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseDomingo" class="collapse" aria-labelledby="headingDomingo" data-parent="#itinerarioViaje">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">10:00-11:00</span>
+                                        <span class="timeline-detail">Desayuno</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">11:00-12:00</span>
+                                        <span class="timeline-detail">Recogida de la Casa</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="timeline-time">13:00</span>
+                                        <span class="timeline-detail">Salida y vuelta a Madrid
+                                            <small class="d-block text-muted">(Comida en restaurante de camino)</small>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4" data-aos="flip-up">
                 <h3>Localización</h3>
@@ -137,6 +235,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./scripts/scripts.js"></script>
+
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 
