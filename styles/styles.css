@@ -95,7 +95,7 @@ body {
 }
 
 .logo {
-    width: 75%;
+    width: 100%;
     margin: 3rem auto;
     display: block;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
