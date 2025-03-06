@@ -67,6 +67,11 @@
                                         <div>
                                             <span class="timeline-time">21:00-22:00</span>
                                             <span class="timeline-detail">Cada uno con su color</span>
+                                            <small class="d-block mt-1">
+                                                <a href="#" data-toggle="modal" data-target="#participantesModal" class="text-muted">
+                                                    <i class="fas fa-users mr-1"></i>Participantes
+                                                </a>
+                                            </small>
                                         </div>
                                         <span class="image-preview-icon" data-toggle="modal" data-target="#tematicaModal">
                                             <i class="fas fa-eye text-primary" style="cursor: pointer;"></i>
@@ -276,6 +281,111 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal para mostrar los participantes por equipos de colores -->
+    <div class="modal fade" id="participantesModal" tabindex="-1" role="dialog" aria-labelledby="participantesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="participantesModalLabel">Equipos y Participantes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Equipo Amarillo -->
+                    <div class="team-card">
+                        <div class="team-header" style="background-color: #FFC107; color: #212529;">
+                            Equipo Amarillo
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #FFC107;"></span>
+                            Alberto
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #FFC107;"></span>
+                            Mario
+                        </div>
+                    </div>
+
+                    <!-- Equipo Blanco -->
+                    <div class="team-card">
+                        <div class="team-header" style="background-color: #F8F9FA; color: #212529; border-bottom: 1px solid #dee2e6;">
+                            Equipo Blanco
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #F8F9FA; border: 1px solid #dee2e6;"></span>
+                            Alex
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #F8F9FA; border: 1px solid #dee2e6;"></span>
+                            Andrea
+                        </div>
+                    </div>
+
+                    <!-- Equipo Marrón -->
+                    <div class="team-card">
+                        <div class="team-header" style="background-color: #8B4513; color: white;">
+                            Equipo Marrón
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #8B4513;"></span>
+                            Marta
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #8B4513;"></span>
+                            Sofía
+                        </div>
+                    </div>
+
+                    <!-- Equipo Naranja -->
+                    <div class="team-card">
+                        <div class="team-header" style="background-color: #FD7E14; color: white;">
+                            Equipo Naranja
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #FD7E14;"></span>
+                            Héctor
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #FD7E14;"></span>
+                            Rio
+                        </div>
+                    </div>
+
+                    <!-- Equipo Rojo -->
+                    <div class="team-card">
+                        <div class="team-header" style="background-color: #dc3545; color: white;">
+                            Equipo Rojo
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #dc3545;"></span>
+                            May
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #dc3545;"></span>
+                            James
+                        </div>
+                    </div>
+
+                    <!-- Equipo Verde -->
+                    <div class="team-card">
+                        <div class="team-header" style="background-color: #28a745; color: white;">
+                            Equipo Verde
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #28a745;"></span>
+                            María
+                        </div>
+                        <div class="team-member">
+                            <span class="color-dot" style="background-color: #28a745;"></span>
+                            Rubén
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
