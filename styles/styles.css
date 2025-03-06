@@ -471,3 +471,9 @@ footer::before {
     opacity: 1 !important;
     text-shadow: none !important;
 }
+
+.close-color {
+    color: black !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
